@@ -11,6 +11,12 @@ COPY mysite /mysite
 
 # Set environment variables 
 ENV PORT=8000 
+ENV STUDENT_NAME="Andrew Pfeiffer"
+ENV SITE_NAME="Andrew's Test Site"
+ENV SECRET_KEY= "the_most_secure_password"
+
+run command mkdir /data
+ENV DATA_DIR=/data
 
 # Set the working directory
 WORKDIR /mysite 
